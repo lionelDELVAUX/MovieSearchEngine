@@ -17,10 +17,10 @@ class AppCoordinator: Coordinator {
     
     func start() {
         let storyboard = UIStoryboard.init(name: "Main", bundle: .main)
-        let homeViewModel = HomeViewModel()
         guard let homeViewController = storyboard.instantiateViewController(withIdentifier: "homeViewController") as? HomeViewController else { return }
+        let homeViewModel = HomeViewModel(coordinator: self, delegate: homeViewController)
         homeViewModel.coordinator = self
         homeViewController.viewModel = homeViewModel
-        navigationController.pushViewController(homeViewController, animated: true)
+        self.navigationController.pushViewController(homeViewController, animated: true)
     }
 }
