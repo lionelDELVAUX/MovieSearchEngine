@@ -17,6 +17,8 @@
 		D00B94CF28F04F3600911218 /* MovieSearchEngineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B94CE28F04F3600911218 /* MovieSearchEngineUITestsLaunchTests.swift */; };
 		D099A85C28F051D00006F808 /* PCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099A85B28F051D00006F808 /* PCoordinator.swift */; };
 		D099A85E28F051FF0006F808 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099A85D28F051FF0006F808 /* AppCoordinator.swift */; };
+		D099A86228F053550006F808 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099A86128F053550006F808 /* HomeViewModel.swift */; };
+		D099A86428F0536C0006F808 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099A86328F0536C0006F808 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		D00B94CE28F04F3600911218 /* MovieSearchEngineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchEngineUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D099A85B28F051D00006F808 /* PCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCoordinator.swift; sourceTree = "<group>"; };
 		D099A85D28F051FF0006F808 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		D099A86128F053550006F808 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D099A86328F0536C0006F808 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		D00B94AA28F04F3500911218 /* MovieSearchEngine */ = {
 			isa = PBXGroup;
 			children = (
+				D099A86028F053390006F808 /* ViewControllers */,
+				D099A85F28F053340006F808 /* ViewModels */,
 				D099A85A28F051C00006F808 /* Coordinators */,
 				D00B94AB28F04F3500911218 /* AppDelegate.swift */,
 				D00B94AF28F04F3500911218 /* ViewController.swift */,
@@ -136,6 +142,22 @@
 				D099A85D28F051FF0006F808 /* AppCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		D099A85F28F053340006F808 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D099A86128F053550006F808 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D099A86028F053390006F808 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D099A86328F0536C0006F808 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +294,9 @@
 				D00B94B028F04F3500911218 /* ViewController.swift in Sources */,
 				D099A85C28F051D00006F808 /* PCoordinator.swift in Sources */,
 				D099A85E28F051FF0006F808 /* AppCoordinator.swift in Sources */,
+				D099A86228F053550006F808 /* HomeViewModel.swift in Sources */,
 				D00B94AC28F04F3500911218 /* AppDelegate.swift in Sources */,
+				D099A86428F0536C0006F808 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
